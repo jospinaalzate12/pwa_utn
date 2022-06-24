@@ -1,15 +1,29 @@
 {
   "name": "proyecto-final",
   "version": "1.0.0",
-  "description": "",
+  "description": "mkdir crea carpetas y touch crea archivos",
   "main": "index.js",
   "scripts": {
-"build":"npm run build-cliend",
-"start":"npm run start-server",
-"build-client":"npm run build --prefix=client",
-"start-server":"npm start --prefix=server"
+    "build": "npm run build-cliend",
+    "start": "npm run start-server",
+    "build-client": "npm run build --prefix=client",
+    "start-server": "npm start --prefix=server",
+    "dev-server": "env-cmd -f server.env npm run dev --prefix=server",
+    "dev-client": "env-cmd -f client.env npm start --prefix=client"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "nodemon": "^2.0.18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jospinaalzate12/pwa_utn.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jospinaalzate12/pwa_utn/issues"
+  },
+  "homepage": "https://github.com/jospinaalzate12/pwa_utn#readme"
 }
